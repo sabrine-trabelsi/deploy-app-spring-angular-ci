@@ -19,7 +19,7 @@ jobs:
         password: ${{ secrets.DOCKERHUB_TOKEN }}
 
     - name: Build Spring App Image
-      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-app:latest ./springboot
+      run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-app:latest ./springboot/app
 
     - name: Build Angular App Image
       run: dokcer build ${{ secrets.DOCKERHUB_USERNAME }}/angular-app:latest ./angular-app
