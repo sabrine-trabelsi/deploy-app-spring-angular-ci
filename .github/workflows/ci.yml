@@ -25,7 +25,7 @@ jobs:
       run: docker build -t ${{ secrets.DOCKERHUB_USERNAME }}/spring-app:latest ./springboot/app
 
     - name: Build Angular App Image
-      run: dokcer build ${{ secrets.DOCKERHUB_USERNAME }}/angular-app:latest ./angular-app
+      run: docker build ${{ secrets.DOCKERHUB_USERNAME }}/angular-app:latest ./angular-app
 
     - name: Push Spring App Image
       run: docker push ${{ secrets.DOKCERHUB_USERNAME }}/spring-app:latest
