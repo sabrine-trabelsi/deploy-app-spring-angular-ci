@@ -35,6 +35,6 @@ jobs:
 
     - name: Run application with Docker Compose
       run: 
-        docker-compose up -d
+        docker compose up -d
         sleep 20
-        docker-compose ps
+        docker compose ps
