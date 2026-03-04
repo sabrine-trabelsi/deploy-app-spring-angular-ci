@@ -31,7 +31,7 @@ jobs:
       run: docker push ${{ secrets.DOKCERHUB_USERNAME }}/spring-app:latest
 
     - name: Push Angular App Image
-      run: dokcer push ${{ secrets.DOCKERHUB_USERNAME }}/angular-app:latest      
+      run: docker push ${{ secrets.DOCKERHUB_USERNAME }}/angular-app:latest      
 
     - name: Run application with Docker Compose
       run: 
